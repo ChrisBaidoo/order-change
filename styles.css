@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'futura-regular', 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'futura-black', 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+}
+
+
+.text-area {
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 0 2em;
+    font-size: 1em;
+    line-height: 1.5;
+
+}
+
+#origin-text {
+    margin: 1em 0;
+    padding: 1.5em;
+    background-color: #d3eeed;
+    margin-bottom: 20em;
+    padding-bottom: 1.5em;
+    border-radius: 6px;
+}
+
+#origin-text h4,
+p,
+h5 {
+    margin: 0;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.logo {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.box-image {
+    text-align: center
+}
+
+.logo img {
+    width: 10em;
+}
+
+.timer {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.sub-text {
+    background-color: #ffffff;
+    padding: .5em 1em;
+    padding-top: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#edit-order {
+    font-size: 1.2em;
+    background-color: #23ACA5;
+    border: 2px solid #23ACA5;
+    position: relative;
+    margin-bottom: .5em;
+    margin-top: 1em;
+}
+
+.button {
+    text-align: center;
+}
+
+#loader {
+    width: 6rem;
+    height: 6rem;
+
+}
+
+#edit-order:hover {
+    background-color: white;
+}
+
+
+#loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@font-face {
+    font-family: futura-regular;
+    src: url(./assets/fonts/futura-regular.woff2);
+}
+
+@font-face {
+    font-family: futura-bold;
+    src: url(./assets/fonts/futura-bold.woff2);
+}
+
+@font-face {
+    font-family: futura-black;
+    src: url(./assets/fonts/futura-black.woff2);
+}

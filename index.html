@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Order change</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="loader">
+      <img src="./assets/image/loader.gif" alt="loading..." />
+    </div>
+
+    <div class="logo">
+      <img src="./assets/image/logo-400.gif" alt="Lovespace logo" />
+    </div>
+
+    <div class="text-area">
+      <div id="origin-text">
+        <div class="box-image">
+          <img src="./assets/image/we-collect.png" alt="Stacked boxes" />
+        </div>
+
+        <h4>Your collection is booked for</h4>
+        <h4 id="booked-date">DD - MM - YY</h4>
+
+        <div class="sub-text">
+          <h5 id="time-left">0 days, 0 hours, 0 mins, 0 secs</h5>
+          <p>remaining to make changes</p>
+        </div>
+
+        <div class="sub-text toggle">
+          <p>
+            You can edit your order up to 11:00am the day before your collection
+          </p>
+
+          <div class="container">
+            <label for="date">New Collection Date</label>
+
+            <input
+              type="date"
+              class="date"
+              name="date"
+              id="input-date"
+              value=""
+            />
+
+            <div class="button">
+              <button id="edit-order" disabled>Edit Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
