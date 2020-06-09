@@ -20,10 +20,10 @@ function getCutOffHour() {
 
 //Prevent user from selecting past date
 function restrictPastDateSelection() {
-  var today = new Date();
-  var currentHour = today.getHours();
+  let today = new Date();
+  let currentHour = today.getHours();
 
-  var cutOffDateIncreament = cutOffDays;
+  let cutOffDateIncreament = cutOffDays;
 
   if (cutOffHour < currentHour) {
     cutOffDateIncreament = cutOffDateIncreament + 1;
