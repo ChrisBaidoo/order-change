@@ -1,4 +1,4 @@
-## Booking Date Countdown App
+## Booking Countdown App
 
 This UI is a countdown component for showing a customer how long remains to make changes to an upcoming order. Built using vanilla javascript.
 
