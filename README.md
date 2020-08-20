@@ -1,11 +1,11 @@
-## Reading List App
+## Booking Date Countdown App
 
 This UI is a countdown component for showing a customer how long remains to make changes to an upcoming order. Built using vanilla javascript.
 
 
 ![Markdown Logo](https://mcusercontent.com/966fc1b875b92a9a36ccf1370/images/c47b4da9-bafc-4838-bc27-330d397f2c5e.gif)
 
-## Installation and Setup Instructions
+<!-- ## Installation and Setup Instructions
 
 ### Prerequisite
 
@@ -24,7 +24,9 @@ localhost:3000
 
 #to create a build of the app:
 npm run build
-```
+``` -->
+
+
 
 ## Reflection
 The project goals included using technologies learned up until this point and familiarizing myself React's Context API.
