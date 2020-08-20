@@ -8,13 +8,18 @@ let toggleEditOrder = document.querySelector(".toggle");
 
 function getCutOffHour() {
   fetch("https://uk-live-support.lovespace.com/cutOffTime")
-    .then(response => {
+    .then((response) => {
       return response.json();
     })
-    .then(data => {
+    .then((data) => {
       cutOffHour = data.cutoffHour;
       restrictPastDateSelection();
       onClickStartCounter();
+    })
+    .catch((error) => {
+      if (error) {
+        alert(error);
+      }
     });
 }
 
@@ -40,12 +45,12 @@ function enableButtonAfterInput() {
     editOrderbutton.disabled = false;
   }
 }
-providedDate.addEventListener("click", function() {
+providedDate.addEventListener("click", function () {
   setInterval(enableButtonAfterInput, 1000);
 });
 
 function onClickStartCounter() {
-  editOrderbutton.addEventListener("click", function() {
+  editOrderbutton.addEventListener("click", function () {
     setInterval(startCountDown, 1000);
   });
   document.getElementById("loader").style.display = "none";
