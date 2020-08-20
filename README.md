@@ -2,6 +2,14 @@
 
 This UI is a countdown component for showing a customer how long remains to make changes to an upcoming order. Built using vanilla javascript.
 
+## Specification
+
+1. The cut-off hour is configured on our server and should be requested by hitting our API:
+1. GET https://uk-live-support.lovespace.com/cutOffTime
+1. This endpoint does not require authentication or request body/parameters
+1. Appropriate messaging or a loading state should be shown while the UI waits for a response
+1. The edit button should be hidden if the cut-off hour has passed.
+
 
 ![Markdown Logo](https://mcusercontent.com/966fc1b875b92a9a36ccf1370/images/c47b4da9-bafc-4838-bc27-330d397f2c5e.gif)
 
