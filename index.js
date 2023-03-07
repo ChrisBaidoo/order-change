@@ -1,4 +1,4 @@
-let cutOffHour = "";
+let cutOffHour = "9";
 let cutOffDays = 1;
 let editOrderbutton = document.querySelector("#edit-order");
 let remainingTime = document.querySelector("#time-left");
@@ -6,22 +6,6 @@ let providedDate = document.querySelector("#input-date");
 let bookedDate = document.querySelector("#booked-date");
 let toggleEditOrder = document.querySelector(".toggle");
 
-function getCutOffHour() {
-  fetch("https://uk-live-support.lovespace.com/cutOffTime")
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      cutOffHour = data.cutoffHour;
-      restrictPastDateSelection();
-      onClickStartCounter();
-    })
-    .catch((error) => {
-      if (error) {
-        alert(error);
-      }
-    });
-}
 
 //Prevent user from selecting past date
 function restrictPastDateSelection() {
@@ -30,7 +14,7 @@ function restrictPastDateSelection() {
 
   let cutOffDateIncreament = cutOffDays;
 
-  if (cutOffHour < currentHour) {
+  if ("0" < currentHour) {
     cutOffDateIncreament = cutOffDateIncreament + 1;
   }
   today.setDate(today.getDate() + cutOffDateIncreament);
@@ -48,15 +32,18 @@ function enableButtonAfterInput() {
 providedDate.addEventListener("click", function () {
   setInterval(enableButtonAfterInput, 1000);
 });
+  document.getElementById("loader").style.display = "none";
+
+        restrictPastDateSelection();
+
+      onClickStartCounter();
 
 function onClickStartCounter() {
   editOrderbutton.addEventListener("click", function () {
     setInterval(startCountDown, 1000);
   });
-  document.getElementById("loader").style.display = "none";
 }
 
-getCutOffHour();
 
 function CalculateCutOffTime(
   providedDate,
