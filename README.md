@@ -36,16 +36,3 @@ In the next iteration I plan on building a backend with a database to store user
 
 
 -->
-
-
-
-
-
-## Contribution
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the repository
-1. Create your feature branch `git checkout -b feature/fooBar`
-1. Commit your changes `git commit -am 'Add some fooBar'`
-1. Push to the branch `git push origin feature/fooBar`
-1. Create a new Pull Request
